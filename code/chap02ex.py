@@ -24,13 +24,8 @@ def Mode(hist):
 
 
 def AllModes(hist):
-    """Returns value-freq pairs in decreasing order of frequency.
-
-    hist: Hist object
-
-    returns: iterator of value-freq pairs
-    """
-    return []
+    sort = sorted(hist.Items(), reverse=True, key=lambda x: x[1])
+    return sort
 
 
 def main(script):
