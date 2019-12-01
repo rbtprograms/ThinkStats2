@@ -15,13 +15,12 @@ import thinkstats2
 
 
 def Mode(hist):
-    """Returns the value with the highest frequency.
+    result = (0,0)
 
-    hist: Hist object
-
-    returns: value from Hist
-    """
-    return 0
+    for val, freq in hist.Items():
+        if int(freq) > result[1]:
+            result = (int(val), int(freq))
+    return result[0]
 
 
 def AllModes(hist):
