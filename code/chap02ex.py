@@ -24,8 +24,7 @@ def Mode(hist):
 
 
 def AllModes(hist):
-    sort = sorted(hist.Items(), reverse=True, key=lambda x: x[1])
-    return sort
+    return sorted(hist.Items(), reverse=True, key=lambda x: x[1])
 
 
 def main(script):
